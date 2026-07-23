@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#B76E79">
+    <meta name="description" content="Frontend Developer Portfolio of Fadila Bala Usman showcasing projects, UI design, and responsive web development.">
 
     <title>Fadila Bala Usman | Frontend Developer</title>
 
@@ -23,10 +25,10 @@
 
     <header>
         <nav class="navbar">
-            <div class="logo">Fadila.</div>
+            <a href="index.html" class="logo">Fadila.</a>
 
             <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
+                <li><a href="#home" class="active">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#services">Services</a></li>
@@ -36,7 +38,7 @@
 
             <a href="#contact" class="contact-btn">Let's Talk</a>
 
-            <div class="menu-btn" id="menu-btn">
+            <div class="menu-btn" id="menu-btn" aria-label="Open Navigation">
                 <i class="fa-solid fa-bars"></i>
             </div>
         </nav>
@@ -108,11 +110,11 @@
                     </div>
 
                     <div class="project-links">
-                        <a href="https://fadilasportfolio.vercel.app" class="primary-btn" target="_blank">
+                        <a href="https://fadilasportfolio.vercel.app" class="primary-btn" target="_blank" rel="noopener noreferrer">
                             <i class="fa-solid fa-arrow-up-right-from-square"></i>
                             Live Demo
                         </a>
-                        <a href="https://github.com/fadeelah2007/fadilasportfolio.github.io.git" class="secondary-btn" target="_blank">
+                        <a href="https://github.com/fadeelah2007/fadilasportfolio.github.io" class="secondary-btn" target="_blank" rel="noopener noreferrer">
                             <i class="fa-brands fa-github"></i>
                             GitHub
                         </a>
@@ -139,11 +141,11 @@
                     </div>
 
                     <div class="project-links">
-                        <a href="https://dice-roller-one-beta.vercel.app" class="primary-btn" target="_blank">
+                        <a href="https://dice-roller-one-beta.vercel.app" class="primary-btn" target="_blank" rel="noopener noreferrer">
                             <i class="fa-solid fa-arrow-up-right-from-square"></i>
                             Live Demo
                         </a>
-                        <a href="https://github.com/fadeelah2007/DiceRoller" class="secondary-btn" target="_blank">
+                        <a href="https://github.com/fadeelah2007/DiceRoller" class="secondary-btn" target="_blank" rel="noopener noreferrer">
                             <i class="fa-brands fa-github"></i>
                             GitHub
                         </a>
@@ -170,11 +172,11 @@
                     </div>
 
                     <div class="project-links">
-                        <a href="https://simple-counter-program.vercel.app" class="primary-btn" target="_blank">
+                        <a href="https://simple-counter-program.vercel.app" class="primary-btn" target="_blank" rel="noopener noreferrer">
                             <i class="fa-solid fa-arrow-up-right-from-square"></i>
                             Live Demo
                         </a>
-                        <a href="https://github.com/fadeelah2007/Simple-Counter-Program" class="secondary-btn" target="_blank">
+                        <a href="https://github.com/fadeelah2007/Simple-Counter-Program" class="secondary-btn" target="_blank" rel="noopener noreferrer">
                             <i class="fa-brands fa-github"></i>
                             GitHub
                         </a>
@@ -320,7 +322,7 @@
         <section id="contact">
             <div class="section-heading">
                 <span>GET IN TOUCH</span>
-                <h2>Let's Build Something Amazing</h2>
+                <h2>Let's Work Together</h2>
                 <p>
                     Have a project idea or collaboration opportunity?
                     Fill out the form below and I'll get back to you as soon as possible.
@@ -328,8 +330,8 @@
             </div>
 
             <div class="contact-container">
-                <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
-                    <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY">
+                <form action="https://api.web3forms.com/submit" method="POST" class="contact-form" id="contact-form">
+                    <input type="hidden" name="access_key" value="05333e85-e19d-4079-b85d-6d80b555a0c3">
 
                     <input type="text" name="name" placeholder="Your Name" required>
 
@@ -343,6 +345,8 @@
                         Send Message
                         <i class="fa-solid fa-paper-plane"></i>
                     </button>
+
+                    <p id="form-status"></p>
                 </form>
             </div>
         </section>
@@ -375,7 +379,7 @@
                 <div class="footer-connect">
                     <h3>Let's Connect</h3>
 
-                    <a href="https://wa.me/2349091936293" target="_blank">
+                    <a href="https://wa.me/2349091936293" target="_blank" rel="noopener noreferrer">
                         <i class="fa-brands fa-whatsapp"></i>
                         WhatsApp
                     </a>
@@ -385,12 +389,12 @@
                         Email
                     </a>
 
-                    <a href="https://github.com/fadeelah2007" target="_blank">
+                    <a href="https://github.com/fadeelah2007" target="_blank" rel="noopener noreferrer">
                         <i class="fa-brands fa-github"></i>
                         GitHub
                     </a>
 
-                    <a href="https://linkedin.com/in/yourusername" target="_blank">
+                    <a href="https://linkedin.com/in/fadila-bala-usman" target="_blank" rel="noopener noreferrer">
                         <i class="fa-brands fa-linkedin"></i>
                         LinkedIn
                     </a>
@@ -400,7 +404,7 @@
             <div class="footer-divider"></div>
 
             <div class="footer-bottom">
-                <p>&copy; 2026 Fadila Bala Usman. All Rights Reserved.</p>
+                <p>&copy; <span id="year"></span> Fadila Bala Usman. All Rights Reserved.</p>
             </div>
         </div>
     </footer>

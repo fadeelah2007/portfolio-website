@@ -901,6 +901,23 @@ header{
     gap: 8px;
 }
 
+.contact-form button:disabled{
+    opacity: 0.7;
+    cursor: not-allowed;
+    transform: none;
+}
+
+#form-status{
+    margin-top: 15px;
+    font-weight: 600;
+    color: #2e7d32;
+    display: none;
+}
+
+#form-status.error{
+    color: #d32f2f;
+}
+
 /*FOOTER*/
 .footer-card{
     background:#fff;
@@ -1425,15 +1442,7 @@ header{
         padding:25px;
     }
 
-    footer{
-
-        padding:70px 6% 30px;
-
-    }
-
     .footer-card{
-
-        border-radius:30px;
         padding:35px;
 
     }
