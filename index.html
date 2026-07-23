@@ -74,8 +74,8 @@
 
                 <!-- RIGHT CONTENT -->
                 <div class="hero-image">
-                    <div class="blob blob1"></div>
-                    <div class="blob blob2"></div>
+                    <div class="blob blob-1"></div>
+                    <div class="blob blob-2"></div>
                     <img src="assets/images/hero-image.png" alt="Fadila Bala Usman">
                 </div>
             </div>
@@ -318,10 +318,91 @@
         </section>
 
         <section id="contact">
+            <div class="section-heading">
+                <span>GET IN TOUCH</span>
+                <h2>Let's Build Something Amazing</h2>
+                <p>
+                    Have a project idea or collaboration opportunity?
+                    Fill out the form below and I'll get back to you as soon as possible.
+                </p>
+            </div>
+
+            <div class="contact-container">
+                <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+                    <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY">
+
+                    <input type="text" name="name" placeholder="Your Name" required>
+
+                    <input type="email" name="email" placeholder="Email Address" required>
+
+                    <input type="text" name="subject" placeholder="Subject">
+
+                    <textarea name="message" rows="7" placeholder="Tell me about your project..." required></textarea>
+
+                    <button type="submit" class="primary-btn">
+                        Send Message
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
         </section>
     </main>
 
     <footer>
+        <div class="footer-card">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <h2>Fadila.</h2>
+                    <p>
+                        Frontend Developer crafting beautiful,
+                        responsive, and accessible digital experiences.
+                    </p>
+                </div>
+
+                <div class="footer-nav">
+                    <h3>Navigation</h3>
+
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-connect">
+                    <h3>Let's Connect</h3>
+
+                    <a href="https://wa.me/2349091936293" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        WhatsApp
+                    </a>
+
+                    <a href="mailto:fadilausman705@gmail.com">
+                        <i class="fa-solid fa-envelope"></i>
+                        Email
+                    </a>
+
+                    <a href="https://github.com/fadeelah2007" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                        GitHub
+                    </a>
+
+                    <a href="https://linkedin.com/in/yourusername" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                        LinkedIn
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-divider"></div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Fadila Bala Usman. All Rights Reserved.</p>
+            </div>
+        </div>
     </footer>
 
 <script src="script.js"></script>

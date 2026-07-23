@@ -72,7 +72,7 @@ header{
 .nav-links a{
     color:var(--heading);
     font-weight:600;
-    transition:.3s;
+    transition:0.3s;
 }
 
 .nav-links a.active {
@@ -225,7 +225,7 @@ header{
     padding:16px 32px;
     border-radius:999px;
     font-weight:600;
-    transition:.35s;
+    transition:0.35s;
 }
 
 .btn-primary{
@@ -357,7 +357,7 @@ header{
     border-radius: 30px;
     overflow: hidden;
     box-shadow: 0 20px 45px rgba(0,0,0,.06);
-    transition: .35s ease;
+    transition: 0.35s ease;
 }
 
 .project-card.featured:hover{
@@ -370,7 +370,7 @@ header{
     border-radius: 30px;
     overflow: hidden;
     box-shadow: 0 15px 35px rgba(0,0,0,.06);
-    transition: .35s ease;
+    transition: 0.35s ease;
 }
 
 .project-card:not(.featured):hover{
@@ -428,7 +428,7 @@ header{
     background: rgba(183,118,121,.12);
     color: var(--primary);
     border-radius: 50px;
-    font-size: .9rem;
+    font-size: 0.9rem;
     font-weight: 600;
 }
 
@@ -454,9 +454,9 @@ header{
     padding: 12px 28px;
     border-radius: 50px;
     font-weight: 600;
-    font-size: .95rem;
+    font-size: 0.95rem;
     text-decoration: none;
-    transition: .3s ease;
+    transition: 0.3s ease;
     cursor: pointer;
 }
 
@@ -528,9 +528,10 @@ header{
     background:rgba(183,110,121,.12);
     color:var(--primary);
     border-radius:50px;
-    font-size:.9rem;
+    font-size:0.9rem;
     font-weight:600;
     letter-spacing:2px;
+    margin-bottom:1.5rem;
 }
 
 .about-container{
@@ -624,7 +625,7 @@ header{
     border-radius:28px;
     padding:40px 30px;
     text-align:center;
-    transition:.35s ease;
+    transition:0.35s ease;
     box-shadow:0 15px 40px rgba(0,0,0,.05);
 }
 
@@ -761,7 +762,7 @@ header{
     background: linear-gradient(90deg,#b77679,#edd0d7);
     transform: scaleX(0);
     transform-origin: left;
-    transition: .35s;
+    transition: 0.35s;
 }
 
 .service-card:hover{
@@ -815,11 +816,190 @@ header{
     text-decoration: none;
     color: #b77679;
     font-weight: 600;
-    transition: .3s;
+    transition: 0.3s;
 }
 
 .service-card a:hover{
     letter-spacing: 1px;
+}
+
+/*CONTACT SECTION*/
+#contact{
+    position: relative;
+    padding: 120px 8%;
+    overflow: hidden;
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 550px;
+    height: 550px;
+    background: #f7e9ec;
+    border-radius: 50%;
+    filter: blur(120px);
+    top: -220px;
+    left: -180px;
+    opacity: 0.25;
+    z-index: -1;
+}
+
+#contact::after{
+    content: "";
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: #f7e9ec;
+    border-radius: 50%;
+    filter: blur(120px);
+    bottom: -220px;
+    right: -180px;
+    opacity: 0.45;
+    z-index: -1;
+}
+
+.contact-container{
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-form{
+    width: 100%;
+    max-width: 750px;
+    background: #fff;
+    padding: 40px;
+    border-radius: 30px;
+    box-shadow: 0 15px 35px rgba(0,0,0,.06);
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-form input, .contact-form textarea{
+    width: 100%;
+    padding: 16px 18px;
+    border: 1px solid #ececec;
+    border-radius: 14px;
+    outline: none;
+    font-size: 1rem;
+    font-family: inherit;
+    transition: 0.3s;
+}
+
+.contact-form input:focus, .contact-form textarea:focus{
+    border-color: var(--primary);
+}
+
+.contact-form textarea{
+    resize: none;
+}
+
+.contact-form button{
+    align-self: flex-start;
+    gap: 8px;
+}
+
+/*FOOTER*/
+.footer-card{
+    background:#fff;
+    padding:60px;
+    box-shadow:0 25px 60px rgba(0,0,0,.06);
+    position:relative;
+    overflow:hidden;
+}
+
+.footer-top{
+    position:relative;
+    z-index:2;
+    display:grid;
+    grid-template-columns:2fr 1fr 1fr;
+    gap:60px;
+}
+
+.footer-brand h2{
+    font-family:"DM Serif Display", serif;
+    font-size:3rem;
+    color:var(--heading);
+}
+
+.footer-brand p{
+    margin-top:20px;
+    max-width:340px;
+    color:var(--text);
+    line-height:1.9;
+}
+
+.footer-nav h3, .footer-connect h3{
+    margin-bottom:20px;
+}
+
+.footer-nav ul{
+    list-style:none;
+}
+
+.footer-nav li{
+    margin-bottom:14px;
+}
+
+.footer-nav a{
+    text-decoration:none;
+    color:var(--text);
+    transition:0.3s;
+}
+
+.footer-nav a:hover{
+    color:var(--primary);
+    padding-left:8px;
+}
+
+.footer-connect{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.footer-connect a{
+    text-decoration:none;
+    color:var(--text);
+    display:flex;
+    align-items:center;
+    gap:14px;
+    padding:12px 18px;
+    background:#faf7f8;
+    border-radius:14px;
+    transition:0.3s;
+}
+
+.footer-connect a:hover{
+    background:var(--primary);
+    color:#fff;
+    transform:translateX(8px);
+}
+
+.footer-connect a:hover i{
+    color:#fff;
+}
+
+.footer-connect i{
+    color:var(--primary);
+    font-size:1.2rem;
+}
+
+.footer-divider{
+    margin:55px 0 25px;
+    height:1px;
+    background:#ececec;
+}
+
+.footer-bottom{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:var(--text);
+    flex-wrap:wrap;
+    gap:15px;
 }
 
 /*PROJECTS PAGE*/
@@ -944,7 +1124,7 @@ header{
     padding: 30px;
     border-radius: 30px;
     box-shadow: 0 15px 35px rgba(0,0,0,.06);
-    transition: .35s ease;
+    transition: 0.35s ease;
 }
 
 .project-item:hover{
@@ -971,7 +1151,7 @@ header{
     height: 100%;
     object-fit: cover;
     display: block;
-    transition: .4s ease;
+    transition: 0.4s ease;
 }
 
 .project-item:hover img{
@@ -1112,6 +1292,30 @@ header{
     .project-item:nth-child(even){
         direction: ltr;
     }
+
+    .contact-container{
+        grid-template-columns:1fr;
+    }
+
+    .footer-card{
+
+        padding:45px;
+
+    }
+
+    .footer-top{
+
+        grid-template-columns:1fr;
+        gap:45px;
+
+    }
+
+    .footer-bottom{
+
+        flex-direction:column;
+        text-align:center;
+
+    }
 }
 
 @media (max-width:768px){
@@ -1211,5 +1415,32 @@ header{
 
     .project-details h3{
         font-size: 1.6rem;
+    }
+
+    #contact{
+        padding:90px 7%;
+    }
+
+    .contact-form{
+        padding:25px;
+    }
+
+    footer{
+
+        padding:70px 6% 30px;
+
+    }
+
+    .footer-card{
+
+        border-radius:30px;
+        padding:35px;
+
+    }
+
+    .footer-brand h2{
+
+        font-size:2.5rem;
+
     }
 }
